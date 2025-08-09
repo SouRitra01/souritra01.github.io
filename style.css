@@ -105,6 +105,9 @@ nav ul li a:hover {
   flex: 1 1 320px;
   color: white;
   padding: 1rem;
+  /* Ensure readability by adding a semi‑transparent backdrop behind hero text */
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 6px;
 }
 
 /* Right area for hero photos */
@@ -145,6 +148,21 @@ section ul li {
   color: var(--primary-color);
   font-size: 2rem;
   text-align: center;
+  /* Add a subtle backdrop so headings stand out on colourful sections */
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 0.3rem 0.6rem;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+/* Improve readability of subheadings on colourful backgrounds by adding a light backdrop */
+section h3,
+section h4 {
+  background-color: rgba(255, 255, 255, 0.75);
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
 }
 
 /* Alternate section backgrounds for a colourful feel */
