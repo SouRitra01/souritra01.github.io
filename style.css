@@ -217,6 +217,19 @@ footer .footer-icons a {
   font-size: 1.3rem;
 }
 
+/* Intro paragraph styling
+   The introductory paragraphs at the top of each page should feel inviting and
+   clearly separate themselves from the main content. A larger font size,
+   centered alignment and generous margins help draw the reader in without
+   overwhelming them. */
+.intro {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
 /* Profile image styling */
 .profile-image {
   width: 200px;
