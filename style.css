@@ -87,17 +87,57 @@ nav ul li a:hover {
   background: rgba(0, 0, 0, 0.4);
 }
 
+/* Hero content now supports two‑column layout with optional photo */
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 800px;
+  max-width: 960px;
+  width: 100%;
   padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Left area for hero headings and text */
+.hero-text {
+  flex: 1 1 320px;
+  color: white;
+  padding: 1rem;
+}
+
+/* Right area for hero photos */
+.hero-photo {
+  flex: 1 1 280px;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.hero-photo img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 section {
   padding: 2rem 1rem;
   max-width: 960px;
   margin: 0 auto;
+}
+
+/* Ensure lists inside sections have consistent spacing */
+section ul {
+  margin-left: 1rem;
+  padding-left: 1.2rem;
+}
+
+section ul li {
+  margin-bottom: 0.5rem;
 }
 
 .section-title {
